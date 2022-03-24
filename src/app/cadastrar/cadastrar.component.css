@@ -1,0 +1,14 @@
+#img-bg {
+    /* background-image: url('../../assets/img/'); = pra voltar na pasta assets e ir pegar a img na pasta /img */
+
+    background-image: url('https://i.imgur.com/jAZOVhd.jpg');
+
+    /* min-height: 1140px; */
+
+    min-height: 695px;
+
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
