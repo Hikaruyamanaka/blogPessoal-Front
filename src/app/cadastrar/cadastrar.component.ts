@@ -17,7 +17,7 @@ export class CadastrarComponent implements OnInit {
 
   constructor(
     private authService: AuthService,
-    private router: Router
+    private route: Router
   ) { }
 
   ngOnInit() {
@@ -40,7 +40,7 @@ export class CadastrarComponent implements OnInit {
     } else {
       this.authService.cadastrar(this.user).subscribe((resp: User) => {
         this.user = resp
-        this.router.navigate(['/entrar'])
+        this.route.navigate(['/entrar'])
         alert('Usuário cadastrado com sucesso!')
       })
     }
